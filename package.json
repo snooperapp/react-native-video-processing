@@ -1,6 +1,6 @@
 {
   "name": "@snooper/react-native-video-processing",
-  "version": "1.22.4",
+  "version": "1.22.5",
   "description": "Native Video processing/editing for React-Native",
   "main": "index.js",
   "scripts": {
