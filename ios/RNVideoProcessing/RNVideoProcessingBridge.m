@@ -5,6 +5,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "GPUImage.h"
+
 #import "React/RCTBridgeModule.h"
 #import "React/RCTViewManager.h"
 #import "RCTSwiftBridgeModule.h"
