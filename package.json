@@ -1,13 +1,12 @@
 {
-  "name": "react-native-video-processing",
-  "version": "1.7.1",
+  "name": "@snooper/react-native-video-processing",
+  "version": "1.20.0",
   "description": "Native Video processing/editing for React-Native",
   "main": "index.js",
   "scripts": {
     "commit": "git add . && git-cz",
     "test": "echo 'tests are disabled'",
-    "test:snapshots": "jest -u",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "test:snapshots": "jest -u"
   },
   "repository": {
     "type": "git",
@@ -50,28 +49,26 @@
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-react-native": "^4.0.0",
-    "babel-preset-react-native-stage-0": "1.0.1",
-    "lodash": "^4.16.6"
+    "babel-preset-react-native": "^4.0.1",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "babel-eslint": "8.0.1",
-    "babel-jest": "21.2.0",
-    "commitizen": "^2.8.6",
-    "cz-conventional-changelog": "^2.1.0",
-    "eslint": "4.10.0",
-    "eslint-config-airbnb": "16.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "6.0.2",
-    "eslint-plugin-react": "7.4.0",
-    "eslint-plugin-react-native": "3.1.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.1.0",
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-native": "^3.8.1",
     "jest": "21.2.1",
     "jest-react-native": "18.0.0",
-    "prop-types": "^15.6.0",
-    "react": "16.0.0-beta.5",
-    "react-native": "^0.49.5",
+    "prop-types": "^15.7.2",
+    "react": "16.11.0",
+    "react-native": "0.62.2",
     "react-native-create-library": "^3.1.2",
-    "react-test-renderer": "16.0.0",
-    "semantic-release": "^8.2.3"
+    "react-test-renderer": "16.11.0"
   }
 }

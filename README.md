@@ -1,13 +1,13 @@
-## react-native-video-processing
+## @snooper/react-native-video-processing
 
- [![Build Status](https://travis-ci.org/shahen94/react-native-video-processing.svg?branch=master)](https://travis-ci.org/shahen94/react-native-video-processing) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=plastic)](https://github.com/semantic-release/semantic-release) [![npm version](https://badge.fury.io/js/react-native-video-processing.svg)](https://badge.fury.io/js/react-native-video-processing) ![npm package](https://img.shields.io/npm/dm/react-native-video-processing.svg)
+ [![Build Status](https://travis-ci.org/snooperapp/react-native-video-processing.svg?branch=master)](https://travis-ci.org/github/snooperapp/react-native-video-processing) [![npm version](https://badge.fury.io/js/%40snooper%2Freact-native-video-processing.svg)](https://badge.fury.io/js/%40snooper%2Freact-native-video-processing) ![npm package](https://img.shields.io/npm/dm/@snooper/react-native-video-processing.svg)
 
 ### Getting Started
 ```sh
-npm install react-native-video-processing --save
+npm install @snooper/react-native-video-processing --save
 ```
 ```sh
-yarn add react-native-video-processing
+yarn add @snooper/react-native-video-processing
 ```
 ### You can check test by running
 `$ npm test` or `$ yarn test`
@@ -199,11 +199,6 @@ export class App extends Component {
   }
 }
 ```
-
-##
-If this project was helpful to you, please <html>
- <a href="https://www.buymeacoffee.com/FnENSxi" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/yellow_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
- </html>
 
 ## Contributing
 
