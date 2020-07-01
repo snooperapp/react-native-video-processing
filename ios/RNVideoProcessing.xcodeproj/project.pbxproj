@@ -25,6 +25,7 @@
 		24F466DA1DD9F1CB0012172B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F4669B1DD9EB9B0012172B /* CoreVideo.framework */; };
 		24F466DB1DD9F1CB0012172B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F4669E1DD9EBBD0012172B /* QuartzCore.framework */; };
 		24FFDD151DDC799E006040F9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24FFDD141DDC799E006040F9 /* MobileCoreServices.framework */; };
+		800E6CD524AD138A00E9EE1D /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800E6CD424AD138900E9EE1D /* GPUImage.framework */; };
 		B429F6152251F40500062EA7 /* AVUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B429F6142251F40500062EA7 /* AVUtilities.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		24F4669E1DD9EBBD0012172B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		24F466A01DD9EBC40012172B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		24FFDD141DDC799E006040F9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		800E6CD424AD138900E9EE1D /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = GPUImage/build/GPUImage.framework; sourceTree = "<group>"; };
 		B429F6142251F40500062EA7 /* AVUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AVUtilities.swift; sourceTree = "<group>"; tabWidth = 2; };
 		B429F7102252496D00062EA7 /* RCTSwiftBridgeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTSwiftBridgeModule.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				800E6CD524AD138A00E9EE1D /* GPUImage.framework in Frameworks */,
 				24FFDD151DDC799E006040F9 /* MobileCoreServices.framework in Frameworks */,
 				24F466D81DD9F1CB0012172B /* AVFoundation.framework in Frameworks */,
 				24F466D91DD9F1CB0012172B /* CoreMedia.framework in Frameworks */,
@@ -150,6 +153,7 @@
 		24F466971DD9EB8B0012172B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				800E6CD424AD138900E9EE1D /* GPUImage.framework */,
 				24FFDD141DDC799E006040F9 /* MobileCoreServices.framework */,
 				24F466A01DD9EBC40012172B /* OpenGLES.framework */,
 				24F4669E1DD9EBBD0012172B /* QuartzCore.framework */,
