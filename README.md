@@ -9,10 +9,12 @@ npm install @snooper/react-native-video-processing --save
 ```sh
 yarn add @snooper/react-native-video-processing
 ```
-### You can check test by running
-`$ npm test` or `$ yarn test`
+### Mostly automatic installation [0.60 >]
 
-### Installation
+`$ react-native link react-native-video-processing`
+
+
+### Manual Installation [< 0.60]
 **Note: For RN 0.4x use 1.0 version, for RN 0.3x use 0.16**
 
 #### [Android]
@@ -199,6 +201,9 @@ export class App extends Component {
   }
 }
 ```
+
+### You can check test by running
+`$ npm test` or `$ yarn test`
 
 ## Contributing
 
