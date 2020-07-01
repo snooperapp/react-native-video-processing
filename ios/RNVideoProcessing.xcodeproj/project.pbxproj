@@ -25,6 +25,7 @@
 		24F466DA1DD9F1CB0012172B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F4669B1DD9EB9B0012172B /* CoreVideo.framework */; };
 		24F466DB1DD9F1CB0012172B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F4669E1DD9EBBD0012172B /* QuartzCore.framework */; };
 		24FFDD151DDC799E006040F9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24FFDD141DDC799E006040F9 /* MobileCoreServices.framework */; };
+		80AD858924ACAF4C008D0607 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AD7B4B24ACAF43008D0607 /* GPUImage.framework */; };
 		B429F6152251F40500062EA7 /* AVUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B429F6142251F40500062EA7 /* AVUtilities.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		24F4669E1DD9EBBD0012172B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		24F466A01DD9EBC40012172B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		24FFDD141DDC799E006040F9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		80AD7B4B24ACAF43008D0607 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
 		B429F6142251F40500062EA7 /* AVUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AVUtilities.swift; sourceTree = "<group>"; tabWidth = 2; };
 		B429F7102252496D00062EA7 /* RCTSwiftBridgeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTSwiftBridgeModule.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 				24F466D91DD9F1CB0012172B /* CoreMedia.framework in Frameworks */,
 				24F466DA1DD9F1CB0012172B /* CoreVideo.framework in Frameworks */,
 				24F466DB1DD9F1CB0012172B /* QuartzCore.framework in Frameworks */,
+				80AD858924ACAF4C008D0607 /* GPUImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +153,7 @@
 		24F466971DD9EB8B0012172B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				80AD7B4B24ACAF43008D0607 /* GPUImage.framework */,
 				24FFDD141DDC799E006040F9 /* MobileCoreServices.framework */,
 				24F466A01DD9EBC40012172B /* OpenGLES.framework */,
 				24F4669E1DD9EBBD0012172B /* QuartzCore.framework */,
@@ -341,6 +345,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GPUImage/build",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -348,7 +356,17 @@
 					"$(SRCROOT)/../../react-native/React/**/**",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GPUImage/build/GPUImage.build/Release-iphonesimulator/GPUImage.build/Objects-normal/i386/Binary",
+					"$(PROJECT_DIR)/GPUImage/build/GPUImage.build/Release-iphonesimulator/GPUImage.build/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/GPUImage/build/GPUImage.build/Release-iphoneos/GPUImage.build/Objects-normal/armv7/Binary",
+					"$(PROJECT_DIR)/GPUImage/build/GPUImage.build/Release-iphoneos/GPUImage.build/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/GPUImage/build/Release-iphonesimulator",
+					"$(PROJECT_DIR)/GPUImage/build/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/GPUImage/build/Release-iphoneos",
+					"$(PROJECT_DIR)/GPUImage/build/Release-iphone/lib",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNVideoProcessing;
 				SKIP_INSTALL = YES;
@@ -362,6 +380,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GPUImage/build",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -369,7 +391,17 @@
 					"$(SRCROOT)/../../react-native/React/**/**",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GPUImage/build/GPUImage.build/Release-iphonesimulator/GPUImage.build/Objects-normal/i386/Binary",
+					"$(PROJECT_DIR)/GPUImage/build/GPUImage.build/Release-iphonesimulator/GPUImage.build/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/GPUImage/build/GPUImage.build/Release-iphoneos/GPUImage.build/Objects-normal/armv7/Binary",
+					"$(PROJECT_DIR)/GPUImage/build/GPUImage.build/Release-iphoneos/GPUImage.build/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/GPUImage/build/Release-iphonesimulator",
+					"$(PROJECT_DIR)/GPUImage/build/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/GPUImage/build/Release-iphoneos",
+					"$(PROJECT_DIR)/GPUImage/build/Release-iphone/lib",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNVideoProcessing;
 				SKIP_INSTALL = YES;
