@@ -25,9 +25,25 @@
 		24F466DA1DD9F1CB0012172B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F4669B1DD9EB9B0012172B /* CoreVideo.framework */; };
 		24F466DB1DD9F1CB0012172B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F4669E1DD9EBBD0012172B /* QuartzCore.framework */; };
 		24FFDD151DDC799E006040F9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24FFDD141DDC799E006040F9 /* MobileCoreServices.framework */; };
-		80AD858924ACAF4C008D0607 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AD7B4B24ACAF43008D0607 /* GPUImage.framework */; };
 		B429F6152251F40500062EA7 /* AVUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B429F6142251F40500062EA7 /* AVUtilities.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		801DF1E224ACB32F00754790 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 801DF1DD24ACB32F00754790 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCE0BE7C20D6DE610006E120;
+			remoteInfo = GPUImage_iOS;
+		};
+		801DF1E424ACB32F00754790 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 801DF1DD24ACB32F00754790 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCE0BE8C20D6E2B80006E120;
+			remoteInfo = GPUImage_macOS;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
@@ -72,7 +88,9 @@
 		24F4669E1DD9EBBD0012172B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		24F466A01DD9EBC40012172B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		24FFDD141DDC799E006040F9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		80AD7B4B24ACAF43008D0607 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
+		801DF1DD24ACB32F00754790 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
+		801DF1E624ACB35800754790 /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		801DF1E724ACB35800754790 /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B429F6142251F40500062EA7 /* AVUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AVUtilities.swift; sourceTree = "<group>"; tabWidth = 2; };
 		B429F7102252496D00062EA7 /* RCTSwiftBridgeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTSwiftBridgeModule.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +105,6 @@
 				24F466D91DD9F1CB0012172B /* CoreMedia.framework in Frameworks */,
 				24F466DA1DD9F1CB0012172B /* CoreVideo.framework in Frameworks */,
 				24F466DB1DD9F1CB0012172B /* QuartzCore.framework in Frameworks */,
-				80AD858924ACAF4C008D0607 /* GPUImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +170,6 @@
 		24F466971DD9EB8B0012172B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				80AD7B4B24ACAF43008D0607 /* GPUImage.framework */,
 				24FFDD141DDC799E006040F9 /* MobileCoreServices.framework */,
 				24F466A01DD9EBC40012172B /* OpenGLES.framework */,
 				24F4669E1DD9EBBD0012172B /* QuartzCore.framework */,
@@ -167,10 +183,31 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				801DF1DD24ACB32F00754790 /* GPUImage.xcodeproj */,
+				801DF1E824ACB35800754790 /* Products */,
 				804A161224ACA105007F057D /* RNVideoProcessing */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				24F466971DD9EB8B0012172B /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		801DF1DE24ACB32F00754790 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				801DF1E324ACB32F00754790 /* GPUImage.framework */,
+				801DF1E524ACB32F00754790 /* GPUImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		801DF1E824ACB35800754790 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				801DF1E624ACB35800754790 /* GPUImage.framework */,
+				801DF1E724ACB35800754790 /* GPUImage.framework */,
+			);
+			name = Products;
+			path = GPUImage/framework;
 			sourceTree = "<group>";
 		};
 		804A161224ACA105007F057D /* RNVideoProcessing */ = {
@@ -235,12 +272,35 @@
 			mainGroup = 58B511D21A9E6C8500147676;
 			productRefGroup = 58B511D21A9E6C8500147676;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 801DF1DE24ACB32F00754790 /* Products */;
+					ProjectRef = 801DF1DD24ACB32F00754790 /* GPUImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				58B511DA1A9E6C8500147676 /* RNVideoProcessing */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		801DF1E324ACB32F00754790 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 801DF1E224ACB32F00754790 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		801DF1E524ACB32F00754790 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 801DF1E424ACB32F00754790 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
