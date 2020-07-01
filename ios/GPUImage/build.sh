@@ -2,8 +2,6 @@
 
 set -e
 
-IOSSDK_VER="9.0"
-
 # xcodebuild -showsdks
 
 cd framework
